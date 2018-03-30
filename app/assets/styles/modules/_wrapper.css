@@ -10,6 +10,16 @@
 		max-width: 976px;
 	}
 
+	&--no-padding-until-medium {
+		padding-left: 0;
+		padding-right: 0;
+
+		@mixin atMedium {
+			padding-left: 18px;
+			padding-right: 18px;			
+		}
+	}
+
 	/* This is for nested wrappers in html - because that created a double-wrapper effect that doesn't look good on mobile - Section 8, Lecture 23*/
 	.wrapper {
 		padding-left: 0;
