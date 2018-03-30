@@ -20,6 +20,16 @@
 		}
 	}
 
+	&--no-padding-until-large {
+		padding-left: 0;
+		padding-right: 0;
+
+		@mixin atLarge {
+			padding-left: 18px;
+			padding-right: 18px;			
+		}
+	}
+
 	/* This is for nested wrappers in html - because that created a double-wrapper effect that doesn't look good on mobile - Section 8, Lecture 23*/
 	.wrapper {
 		padding-left: 0;
